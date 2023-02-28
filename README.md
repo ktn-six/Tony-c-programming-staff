@@ -1,1 +1,1 @@
-new c scripts
+learning c programs
