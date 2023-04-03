@@ -1,9 +1,8 @@
-# include <stdio.h>
+#include <stdio.h>
 
-int main()
-int i;
-
-for (i = 0; < 10; i++)
-{
-	printf("%d", i*2);
+int main(){
+     int i = 5;
+     int var = sizeof(i++);
+     printf("%d %d", i, var);
+     return 0;
 }
