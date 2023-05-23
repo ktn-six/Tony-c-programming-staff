@@ -1,12 +1,18 @@
 #include <stdio.h>
 
+int fun()
+{
+    static int num = 16;
+    return num--;
+}
+
 int main()
 
 {
-    int i = 0;
-    for (printf("one\n"); i< 3 && printf(""); i++)
-        {
-        printf("Hi!\n");
-        }
-        return 0;
+    for (fun(); fun(); fun());
+    printf("%d ", fun());
+    return 0;
 }
+
+
+
